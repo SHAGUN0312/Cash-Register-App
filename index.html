@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container container-center">
+      <h1>Know Your Change 💰</h1>
+      <p>
+        Enter the details below and know the minimum number of notes to return
+        as quick as a flash.
+      </p>
+      <div>
+        <label for="billAmt">Bill Amount:</label>
+        <input
+          id="billAmt"
+          type="number"
+          placeholder="Enter the Bill Amount here ..."
+        />
+        <button id="next">Next</button>
+      </div>
+
+      <div id="cashGiven">
+        <label for="cashAmt">Cash Given:</label>
+        <input
+          id="cashAmt"
+          type="number"
+          placeholder="Enter the Cash Amount here ..."
+        />
+        <button id="check">Check</button>
+      </div>
+
+      <h3 class="error"></h3>
+
+      <div class="result">
+        <div id="output">
+          <table>
+            <caption>
+              Return Change:
+            </caption>
+            <tr>
+              <th>No. of Notes:</th>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+              <td class="notes"></td>
+            </tr>
+            <tr>
+              <th>Value:</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>100</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- <footer>
+      Agar netlify pe host karegi, toh footer daal, varna codesandbox pe not
+      needed.
+    </footer> -->
+    <script src="script.js"></script>
+  </body>
+</html>

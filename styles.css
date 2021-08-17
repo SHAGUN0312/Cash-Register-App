@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Tourney:wght@100&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --heading: 'Tourney', cursive;
+    --subHeading: 'Knewave', cursive;
+    --random: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --mainColor: green;
+    --subColor: rgb(233, 150, 42);
+}
+
+body {
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    padding: 2rem 1.2rem;
+}
+
+.container-center {
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: auto;
+}
+
+section {
+    background-color: var(--mainColor);
+    color: white;
+}
+
+h1 {
+    font-family: var(--heading);
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-family: var(--random);
+}
+
+label {
+    font-family: var(--subHeading);
+    letter-spacing: 0.3rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--subColor);
+}
+
+input {
+    margin: 1.2rem 0rem;
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem 1rem;
+    border: 0.2rem solid white;
+    box-shadow: -0.2rem 0.2rem var(--subColor);
+    background-color: var(--mainColor);
+    color: white;
+    border-top-width: 0.2rem;
+    border-right-width: 0.2rem;
+    outline: none;
+    border-block-end-color: var(--subColor);
+    border-inline-start-color: var(--subColor);
+    border-start-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+    font-size: 1.3rem;
+}
+
+::placeholder {
+    font-family: var(--random);
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.2rem;
+    font-family: var(--subHeading);
+    color: var(--subColor);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    outline: none;
+    border: 0.5px solid transparent;
+    box-shadow: 0.3rem 0.2rem var(--subColor);
+}
+
+button:hover {
+    color: var(--mainColor);
+    border: 1.5px solid var(--subColor);
+    cursor: pointer;
+}
+
+/* error handling*/
+h3 {
+    font-family: var(--random);
+    margin-bottom: 0;
+}
+
+#cashGiven {
+    display: none;
+}
+
+.result caption {
+    margin: 1rem;
+    letter-spacing: 0.4rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: var(--subHeading);
+    color: var(--subColor);
+}
+
+.result {
+    display: none;
+}
+
+.error {
+    display: none;
+}
+
+#output {
+    margin: 1rem 0;
+}
+
+#output table,
+th,
+td {
+    padding: 0.2rem;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-family: var(--random);
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.notes {
+    font-weight: bolder;
+    background-color: white;
+    color: var(--mainColor);
+    border: 1px solid var(--subColor);
+}
+
+th,
+td {
+    word-wrap: break-word;
+    font-weight: bolder;
+}
